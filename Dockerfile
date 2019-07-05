@@ -4,4 +4,4 @@ FROM sagemath/sagemath:8.7
 # Make sure the contents of our repo are in ${HOME}
 COPY --chown=sage:sage . ${HOME}
 #RUN sudo apt-get install graphviz
-#RUN sage -pip install dot2tex
+RUN sage -pip install dot2tex
