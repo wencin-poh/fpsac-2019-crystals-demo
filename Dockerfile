@@ -10,5 +10,6 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN pwd
 
 RUN sudo apt-get -q update && sudo apt-get -qy install graphviz
+RUN sudo apt-get -qy install texlive-latex-extra
 RUN sage -pip install dot2tex
 RUN sudo apt-get -q clean
